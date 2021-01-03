@@ -5,9 +5,9 @@ using System.IO;
 
 namespace TeaPicker
 {
-    public partial class Form1 : Form
+    public partial class MainWindow : Form
     {
-        public Form1()
+        public MainWindow()
         {
             InitializeComponent();
         }
