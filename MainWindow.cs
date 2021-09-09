@@ -16,7 +16,6 @@ namespace TeaPicker
         {
             var teaList = new List<string>();
 
-            int lineCount = 0;
 
             using (var teaReader = new StreamReader(TeaType))
             {
@@ -25,13 +24,11 @@ namespace TeaPicker
                 while ((line = teaReader.ReadLine()) != null)
                 {
                     teaList.Add(line);
-                    lineCount++;
                 }
             }
-            string[] results= teaList.ToArray();
             Random rnd = new Random();
-            int tea= rnd.Next(0, lineCount);
-            resultsTextBox.Text = results[tea];
+            int herbata=rnd.Next(teaList.Count);
+            richTextBox1.Text = teaList[herbata];
         }
 
         private void button1_Click(object sender, EventArgs e)
