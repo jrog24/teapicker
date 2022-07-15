@@ -27,8 +27,8 @@ namespace TeaPicker
                 }
             }
             Random rnd = new Random();
-            int herbata=rnd.Next(teaList.Count);
-            richTextBox1.Text = teaList[herbata];
+            int tea=rnd.Next(teaList.Count);
+            richTextBox1.Text = teaList[tea];
         }
 
         private void button1_Click(object sender, EventArgs e)
